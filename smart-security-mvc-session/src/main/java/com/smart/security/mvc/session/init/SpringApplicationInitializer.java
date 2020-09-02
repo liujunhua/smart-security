@@ -10,16 +10,20 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
  * @date 2020/8/1218:02
  */
 public class SpringApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+
+    //spring容器，相当于加载 applicationContext.xml
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class<?>[]{ApplicationConfig.class};//指定rootContext的配置类
+        return new Class[]{ApplicationConfig.class};
     }
 
+    //servletContext，相当于加载springmvc.xml
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class<?>[]{WebConfig.class}; //指定servletContext的配置类
+        return new Class[]{WebConfig.class};
     }
 
+    //url-mapping
     @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};

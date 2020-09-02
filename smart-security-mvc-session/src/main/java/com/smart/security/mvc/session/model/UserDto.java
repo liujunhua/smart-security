@@ -1,7 +1,6 @@
 package com.smart.security.mvc.session.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.*;
 
 import java.util.Set;
 
@@ -19,8 +18,10 @@ public class UserDto {
     private String password;
     private String fullname;
     private String mobile;
+
     /**
      * 用户权限
      */
     private Set<String> authorities;
+
 }

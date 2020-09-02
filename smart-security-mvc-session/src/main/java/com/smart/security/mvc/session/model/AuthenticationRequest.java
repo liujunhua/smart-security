@@ -5,10 +5,12 @@ import lombok.Data;
 /**
  * @author Administrator
  * @version 1.0
+ * 认证请求参数，账号、密码
  **/
+
 @Data
 public class AuthenticationRequest {
-    //认证请求参数，账号、密码。。
+
     /**
      * 用户名
      */
