@@ -8,7 +8,9 @@
     <artifactId>smart-security</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <modules>
-        <module>smart-security-mvc-session</module>
+        <module>smart-security-session</module>
+        <module>smart-security-token</module>
+        <module>smart-security-token-boot</module>
     </modules>
     <name>smart-security</name>
     <packaging>pom</packaging>
@@ -144,6 +146,18 @@
             </dependency>
 
             <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-web</artifactId>
+                <version>5.3.4.RELEASE</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-config</artifactId>
+                <version>5.3.4.RELEASE</version>
+            </dependency>
+
+            <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
                 <version>3.1.0</version>
@@ -165,34 +179,14 @@
         </dependencies>
 
     </dependencyManagement>
-    <distributionManagement>
-        <repository>
-            <id>local-releases</id>
-            <!--这个ID需要与你的release仓库的setting.xml的server的Repository ID一致-->
-            <url>http://192.168.2.222:8081/nexus/content/repositories/releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>local-snapshots</id>
-            <!--这个ID需要与你的snapshots仓库的setting.xml的server的Repository ID一致-->
-            <url>http://192.168.2.222:8081/nexus/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
-    <repositories>
-        <repository>
-            <id>local-snapshots</id>
-            <url>http://192.168.2.222:8081/nexus/content/groups/public/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+       <plugins>
+           <plugin>
+               <groupId>org.springframework.boot</groupId>
+               <artifactId>spring-boot-maven-plugin</artifactId>
+           </plugin>
+       </plugins>
+   </build>
 
 </project>
