@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /smart-security-token-boot
+spring:
+  application:
+    name: smart-security-token-boot
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp

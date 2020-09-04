@@ -11,10 +11,10 @@
     </parent>
 
     <groupId>com.smart</groupId>
-    <artifactId>smart-security-token-boot</artifactId>
+    <artifactId>smart-security-auth</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>smart-security-token-boot</name>
-    <description>smart-security-token-boot description</description>
+    <name>smart-security-auth</name>
+    <description>smart-security-auth description</description>
 
     <properties>
         <project.build.sourceEncoding>UTF‐8</project.build.sourceEncoding>
@@ -23,25 +23,6 @@
     </properties>
 
     <dependencies>
-
-        <!--以下是spring boot依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <!--以下是spring security依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
 
     </dependencies>
 

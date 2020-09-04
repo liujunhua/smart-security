@@ -11,6 +11,7 @@
         <module>smart-security-session</module>
         <module>smart-security-token</module>
         <module>smart-security-token-boot</module>
+        <module>smart-security-auth</module>
     </modules>
     <name>smart-security</name>
     <packaging>pom</packaging>
