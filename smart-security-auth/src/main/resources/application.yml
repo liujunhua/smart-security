@@ -1,0 +1,33 @@
+swagger2:
+  enable: true
+server:
+  port: 10001
+spring:
+  application:
+    name: smart-security-auth
+  security:
+    user:
+      name: user
+      password: 123
+  datasource:
+    dynamic:
+      druid:
+        initial-size: 5
+        max-active: 2000
+        max-wait: 600000
+        min-evictable-idle-time-millis: 300000
+        min-idle: 5
+        test-on-borrow: false
+        test-on-return: false
+        test-while-idle: true
+        time-between-eviction-runs-millis: 60000
+        validation-query: SELECT 1 FROM DUAL
+      primary: master
+      datasource:
+        master:
+          driver-class-name: com.mysql.jdbc.Driver
+          password: Jgw*31500-2018.6
+          url: jdbc:mysql://192.168.2.215:3306/hydra_security?characterEncoding=utf-8&useSSL=false
+          username: jgw
+security:
+  url: http://localhost:10001

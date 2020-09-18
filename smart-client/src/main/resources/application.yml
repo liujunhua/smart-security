@@ -1,0 +1,21 @@
+server:
+  port: 18021
+  servlet:
+    session:
+      cookie:
+        name: OAUTH2SESSION
+    #context-path: /hydra-client
+spring:
+  application:
+    name: hydra-client
+security:
+  oauth2:
+    sso:
+      login-path: /login
+    client:
+      client-id: dev
+      client-secret: 123456
+      user-authorization-uri: http://localhost:18010/oauth/authorize
+      access-token-uri: http://localhost:18010/oauth/token
+    resource:
+      token-info-uri: http://localhost:18010/oauth/check_token
