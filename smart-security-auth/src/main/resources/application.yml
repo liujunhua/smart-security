@@ -1,7 +1,7 @@
 swagger2:
   enable: true
 server:
-  port: 10001
+  port: 8001
 spring:
   application:
     name: smart-security-auth
@@ -30,4 +30,4 @@ spring:
           url: jdbc:mysql://192.168.2.215:3306/hydra_security?characterEncoding=utf-8&useSSL=false
           username: jgw
 security:
-  url: http://localhost:10001
+  url: http://localhost:8001

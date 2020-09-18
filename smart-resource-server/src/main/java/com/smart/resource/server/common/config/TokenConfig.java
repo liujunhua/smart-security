@@ -13,7 +13,7 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 @Configuration
 public class TokenConfig {
 
-    private String SIGNING_KEY = "uaa123";
+    private String SIGNING_KEY = "smart.security.123";
 
     @Bean
     public TokenStore tokenStore() {

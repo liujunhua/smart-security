@@ -79,7 +79,10 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
         clients.withClientDetails(jdbcClientDetailsService());
     }
 
-    //令牌管理服务
+    /**
+     * 令牌管理服务
+     * @return
+     */
     @Bean
     public AuthorizationServerTokenServices tokenService() {
         DefaultTokenServices service=new DefaultTokenServices();

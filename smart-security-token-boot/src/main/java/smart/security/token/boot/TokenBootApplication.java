@@ -9,8 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2020/9/314:07
  */
 @SpringBootApplication
-public class SecuritySpringBootApp {
+public class TokenBootApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SecuritySpringBootApp.class, args);
+        SpringApplication.run(TokenBootApplication.class, args);
     }
 }
