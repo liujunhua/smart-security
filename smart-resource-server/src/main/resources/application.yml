@@ -1,8 +1,8 @@
 server:
-  port: 18022
+  port: 8002
 spring:
   application:
-    name: hydra-code
+    name: smart-resource-server
   main:
     allow-bean-definition-overriding: true
   datasource:
@@ -31,4 +31,4 @@ security:
       client-id: dev
       client-secret: 123456
     resource:
-      token-info-uri: http://localhost:10001/oauth/check_token
+      token-info-uri: http://localhost:8001/oauth/check_token

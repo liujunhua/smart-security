@@ -17,7 +17,7 @@
         <module>smart-security-token</module>
         <module>smart-security-token-boot</module>
         <module>smart-security-auth</module>
-        <module>smsrt-resource-server</module>
+        <module>smart-resource-server</module>
         <module>smart-client</module>
     </modules>
 

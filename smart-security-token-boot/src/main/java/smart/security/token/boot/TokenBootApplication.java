@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author liujunhua
- * @description: TODO
+ * @description: TokenBootApplication
  * @date 2020/9/314:07
  */
 @SpringBootApplication

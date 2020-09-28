@@ -35,6 +35,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
+        // 加默认请求根路径跳转到/login
         registry.addViewController("/").setViewName("redirect:/login");
     }
 
