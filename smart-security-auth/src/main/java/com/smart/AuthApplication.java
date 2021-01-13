@@ -43,7 +43,7 @@ public class AuthApplication {
     /**
      *  客户端模式（client_credentials）
      * 步骤1 启动应用程序
-     * 步骤2 POST http://localhost:port/oauth/token
+     * 步骤2 POST http://localhost:port/oauth/token 示例：http://localhost:8001/oauth/token
      * Content-Type: application/x-www-form-urlencoded
      * client_id=c1
      * client_secret=123456
